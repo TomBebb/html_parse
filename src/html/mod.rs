@@ -7,7 +7,7 @@ use html5ever::{
     driver, local_name, namespace_url, ns, tendril::TendrilSink, tree_builder::QuirksMode, QualName,
 };
 
-pub use self::node::Node;
+pub use self::node::{Node, Element, Attributes, Text, Comment};
 
 mod node;
 #[cfg(feature = "serde")]
